@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title>ELLIPSYS, Inc.</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="ELLIPSYS ロゴ">
+      </a>
+      <button class="nav-toggle" aria-label="メニュー切り替え">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#services">サービス</a>
+        <a href="#cases">開発事例</a>
+        <a href="#team">チーム</a>
+        <a href="#about">会社概要</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-video">
+      <video autoplay muted loop playsinline>
+        <source src="video/firstview.mp4" type="video/mp4">
+        お使いのブラウザは動画に対応していません。
+      </video>
+    </div>
+    <div class="hero-content">
+      <h1>テクノロジーで、体験を革新する。</h1>
+      <p>ELLIPSYSは、ITサービスの企画・デザイン・開発をワンストップで提供する、次世代のソリューションパートナーです。</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQkSKlYLMNBxwBCtV3NpTFKaJZlv0uDw4oUfTlIYo1oh5LRQ/viewform" class="cta-button" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+    </div>
+  </section>
+
+  <section id="services" class="services fade-in">
+    <h2 class="section-title">提供サービス</h2>
+    <div class="services-container">
+      <div class="service-item fade-in">
+        <img src="images/business.jpg" alt="Strategy Icon">
+        <h3>Strategy</h3>
+        <p>ビジネス目標やユーザー課題を深く理解したうえで、サービスの構想からリリース後の運用戦略までをトータルに設計します。調査・分析・PoC設計など、企画フェーズから伴走します。</p>
+      </div>
+      <div class="service-item fade-in">
+        <img src="images/design.jpg" alt="Design Icon">
+        <h3>Design</h3>
+        <p>情報設計・UIデザイン・UXライティングなど、ユーザー体験を軸に設計された使いやすく美しいインターフェースを提供します。プロトタイピングやユーザーテストも対応可能です。</p>
+      </div>
+      <div class="service-item fade-in">
+        <img src="images/technology.jpg" alt="Technology Icon">
+        <h3>Technology</h3>
+        <p>Web／モバイルアプリ開発、AI・クラウド技術の導入まで柔軟に対応。品質とスピードの両立を目指した開発体制を提供します。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cases" class="case-study fade-in">
+    <div class="inner">
+      <h2 class="section-title">開発事例</h2>
+      <div class="case-container fade-in">
+        <div class="case-text">
+          <h3>名古屋大学向け道案内アプリ「NUMAPS」</h3>
+          <p>
+            リストから行きたい場所を選んで、名古屋大学内の場所の情報を確認・道案内を利用可能。
+            QRコードを読み込むだけで使える、直感的かつ実用的なキャンパスナビアプリです。
+          </p>
+          <a href="https://numaps.adm.nagoya-u.ac.jp/" class="cta-button small" target="_blank" rel="noopener noreferrer">NUMAPS 公開リンク</a>
+        </div>
+        <div class="case-image">
+          <img src="images/numaps.png" alt="NU MAPS アプリ画面">
+        </div>
+      </div>
+      <div class="case-container fade-in">
+        <div class="case-text">
+          <h3>カウンセリング予約システム</h3>
+          <p>
+            名古屋大学学生支援本部様のカウンセリングの予約フローと管理のDXを行いました。LINEアカウントでカウンセリングを予約することもできます。
+          </p>
+        </div>
+        <div class="case-image">
+          <img src="images/counselingsystem.png" alt="カウンセリング予約システム アプリ画面">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="team fade-in">
+    <h2 class="section-title">チーム紹介</h2>
+    <div class="team-container">
+      <div class="team-member fade-in">
+        <img src="images/face.jpg" alt="メンバー1">
+        <h3>〇〇 〇〇</h3>
+        <p>プロダクトマネージャー<br>企画と進行管理を担当。</p>
+      </div>
+      <div class="team-member fade-in">
+        <img src="images/face.jpg" alt="メンバー2">
+        <h3>〇〇 〇〇</h3>
+        <p>UI/UXデザイナー<br>デザインとユーザーテストを担当。</p>
+      </div>
+      <div class="team-member fade-in">
+        <img src="images/face.jpg" alt="メンバー3">
+        <h3>〇〇 〇〇</h3>
+        <p>バックエンドエンジニア<br>API設計とデータ基盤を担当。</p>
+      </div>
+      <div class="team-member fade-in">
+        <img src="images/face.jpg" alt="メンバー4">
+        <h3>〇〇 〇〇</h3>
+        <p>フロントエンドエンジニア<br>Reactによる実装を担当。</p>
+      </div>
+      <div class="team-member fade-in">
+        <img src="images/face.jpg" alt="メンバー5">
+        <h3>〇〇 〇〇</h3>
+        <p>インフラ・DevOps<br>CI/CDと運用自動化を担当。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="company fade-in">
+    <div class="inner">
+      <h2 class="section-title">会社概要</h2>
+      <div class="company-info">
+        <dl>
+          <div>
+            <dt>会社名</dt>
+            <dd>株式会社ELLIPSYS</dd>
+          </div>
+          <div>
+            <dt>設立</dt>
+            <dd>2021年10月</dd>
+          </div>
+          <div>
+            <dt>所在地</dt>
+            <dd>〇〇</dd>
+          </div>
+          <div>
+            <dt>代表者</dt>
+            <dd>代表社員 〇〇 〇〇</dd>
+          </div>
+          <div>
+            <dt>事業内容</dt>
+            <dd>ITサービスの企画・デザイン・開発</dd>
+          </div>
+          <div>
+            <dt>連絡先</dt>
+            <dd><a href="mailto:info@ellipsys.com">info@ellipsys.com</a></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ELLIPSYS, Inc. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>
