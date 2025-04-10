@@ -255,6 +255,72 @@ section {
   text-align: left; /* ← 左寄せ */
 }
 
+/* ご挨拶 */
+.greeting {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 40px 30px 60px;
+}
+
+.greeting .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.greeting .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.greeting .greeting-text p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 1.8em;
+  word-break: break-word;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .greeting {
+    padding: 60px 0;
+  }
+
+  .greeting .inner {
+    padding: 0 20px;
+  }
+
+  .greeting .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .greeting .greeting-text p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+/* 改行クラス - PCでだけ有効 */
+.br-pc {
+  display: inline;
+}
+
+.br-pc::after {
+  content: "\A"; /* 改行 */
+  white-space: pre;
+}
+
+/* スマホでは改行を無効化 */
+@media (max-width: 768px) {
+  .br-pc,
+  .br-pc::after {
+    content: none;
+    display: inline;
+    white-space: normal;
+  }
+}
+
 /* サービス一覧コンテナ */
 .services-container {
   display: flex;
@@ -402,12 +468,12 @@ section {
   }
 
   .case-container {
-    padding: 20px;        /* ← スマホ時はコンパクトに */
+    padding: 20px; 
     margin-bottom: 20px;
   }
 
   .case-text h3 {
-    font-size: 1.2rem;     /* タイトルも少し小さく */
+    font-size: 1.2rem;   
     margin-bottom: 10px;
   }
 
@@ -446,12 +512,12 @@ section {
 .team-member img {
   width: 160px;
   height: 160px;
-  object-fit: cover; /* 中央トリミングで比率崩さず表示 */
-  border-radius: 50%; /* 丸くする */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #ccc; 
+  box-shadow: none;
   margin-bottom: 20px;
 }
-
 
 .team-member h3 {
   font-size: 1.2rem;
@@ -538,4 +604,33 @@ footer p {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.lang-btn {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.lang-btn:hover {
+  background-color: #0077cc;
+  color: #fff;
+  border-color: #0077cc;
+}
+
+.lang-toggle .divider {
+  color: #888;
 }
